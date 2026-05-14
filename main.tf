@@ -23,3 +23,7 @@ module "static_site" {
   project_name = var.project_name
   environment  = var.environment
 }
+
+module "vpc" {
+  source = "./modules/vpc"
+}
